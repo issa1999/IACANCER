@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -28,24 +30,27 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Medilab - v4.1.0
-  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://www.expertphp.in/js/jquery.form.js"></script>
+  <!-- <script>
+    function preview_images() {
+      var total_file = document.getElementById("images").files.length;
+      for (var i = 0; i < total_file; i++) {
+        $('#image_preview').append("<div class='col-md-3'><img class='img-responsive' src='" + URL.createObjectURL(event.target.files[i]) + "'></div>");
+      }
+    }
+  </script> -->
 </head>
 
 <body>
-
-
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
+  <header id="header" style="position:fixed;top:0;left: 0;right: 0;">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">IA Cancer</a></h1>
-      
+      <h1 class="logo me-auto"><a href="#">IA Cancer</a></h1>
+
     </div>
   </header><!-- End Header -->
 
@@ -53,217 +58,102 @@
   <section id="hero" class="d-flex align-items-center">
     <div class="container">
       <h1>Welcome to IA-CANCER</h1>
-      <h2>Upload some pictures to test </h2>
-	  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-	  <script type="text/javascript" src="http://www.expertphp.in/js/jquery.form.js"></script>
-	  <script>
-	  function preview_images() 
-	  {
-	   var total_file=document.getElementById("images").files.length;
-	   for(var i=0;i<total_file;i++)
-	   {
-		$('#image_preview').append("<div class='col-md-3'><img class='img-responsive' src='"+URL.createObjectURL(event.target.files[i])+"'></div>");
-	   }
-	  }
-	  </script>
-	  </head>
-	  <body>
-	  <div class="row">
-	   <form action="multiupload.php" method="post" enctype="multipart/form-data">
-		<div class="col-md-6">
-			<input type="file" class="form-control" id="images" name="images[]" onchange="preview_images();" multiple/>
-		</div>
-		<div class="col-md-6">
-			<input type="submit" class="btn btn-primary" name='submit_image' value="Upload Multiple Image"/>
-		</div>
-	   </form>
-	   </div>
-	   <div class="row" id="image_preview"></div>
-    </div> 
-   
+      <h2>Upload some cancer pictures to test </h2>
+
+        <div class="row p-5">
+            <div class="col-md-6">
+              <input type="file" class="form-control" id="images" name="images[]"
+                multiple />
+            </div>
+            <div class="col-md-6">
+              <input class="btn btn-primary" type="submit" id="btn" name='submit_image' value="Upload Images" />
+            </div>
+        </div>
+    </div>
+
     </div>
   </section><!-- End Hero -->
   <!-- ======= Gallery Section ======= -->
-  <section id="gallery" class="gallery">
+  <section id="gallery" class="gallery" >
     <div class="container">
 
       <div class="section-title">
-        <h2>Gallery</h2>
+        <h2>Results</h2>
       </div>
     </div>
 
     <div class="container-fluid">
-      <div class="row no-gutters">
+      <div class="row no-gutters" id="bigdiv">
 
-        <div class="col-lg-3 col-md-4">
+        <!-- <div class="col-lg-3 col-md-4">
           <div class="gallery-item">
             <a href="assets/img/gallery/gallery-1.jpg" class="galelry-lightbox">
               <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
             </a>
           </div>
-        </div>
+        </div> -->
 
-        <div class="col-lg-3 col-md-4">
-          <div class="gallery-item">
-            <a href="assets/img/gallery/gallery-2.jpg" class="galelry-lightbox">
-              <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
-            </a>
-          </div>
-        </div>
 
-        <div class="col-lg-3 col-md-4">
-          <div class="gallery-item">
-            <a href="assets/img/gallery/gallery-3.jpg" class="galelry-lightbox">
-              <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
-            </a>
-          </div>
-        </div>
 
-        <div class="col-lg-3 col-md-4">
-          <div class="gallery-item">
-            <a href="assets/img/gallery/gallery-4.jpg" class="galelry-lightbox">
-              <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
-            </a>
-          </div>
-        </div>
 
-        <div class="col-lg-3 col-md-4">
-          <div class="gallery-item">
-            <a href="assets/img/gallery/gallery-5.jpg" class="galelry-lightbox">
-              <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4">
-          <div class="gallery-item">
-            <a href="assets/img/gallery/gallery-6.jpg" class="galelry-lightbox">
-              <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4">
-          <div class="gallery-item">
-            <a href="assets/img/gallery/gallery-7.jpg" class="galelry-lightbox">
-              <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4">
-          <div class="gallery-item">
-            <a href="assets/img/gallery/gallery-8.jpg" class="galelry-lightbox">
-              <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
-            </a>
-          </div>
-        </div>
 
       </div>
 
     </div>
-  </section><!-- End Gallery Section -->  
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container">
+  </section><!-- End Gallery Section -->
 
-        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
 
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-    
-
-    <!-- ======= Contact Section ======= -->
-   
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    // var btn = document.getElementById("btn")
+    
+    // // btn.addEventListener("click",function(){
+    // //   alert("hello")
+    // // })
+
+    // $("#btn").on("click",function(){
+    //   alert("hello from jquery")
+    // })
+
+    $("#btn").on("click", () => {
+      var formdata = new FormData()
+      for(var i=0;i<$("#images")[0].files.length;i++)
+        formdata.append("images", $("#images")[0].files[i])
+      $.ajax({
+        url: "http://127.0.0.1:5000/",
+        type: "POST",
+        data:formdata,
+        contentType: false,
+        processData: false,
+        success: (data) => {
+          for (var i = 0; i < data.length; i++) {
+            var x = URL.createObjectURL($("#images")[0].files[i])
+                      
+            var newdiv = $(`<div class="col-lg-3 col-md-4">
+                              <div class="gallery-item">
+                                <a href="#" class="galelry-lightbox">
+                                  <img src="" alt="" class="img-fluid a-${i}">
+                                </a>
+                                <h5>Type: ${data[i].type}</h5>
+                                <h6>severity: ${data[i].severity}</h6>
+                              </div>
+                            </div>`)
+            $("#bigdiv").append(newdiv)
+            $(".a-"+i).attr("src",x)
+            
+          }
+
+        }
+      })
+    })
+
+  </script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
