@@ -138,10 +138,10 @@
             var newdiv = $(`<div class="col-lg-3 col-md-4">
                               <div class="gallery-item">
                                 <a href="#" class="galelry-lightbox">
-                                  <img src="" alt="" class="img-fluid a-${i}">
+                                  <img src="" alt="" class="img-fluid a-${i}" style="width:500px !important;height:500px !important">
                                 </a>
-                                <h5>Type: ${data[i].type}</h5>
-                                <h6>severity: ${data[i].severity}</h6>
+                                <h4 style="color: rgb(5, 120, 158);background-color: blanchedalmond;  font-family: 'Courier New', Courier, monospace; padding:20px;">Type: ${data[i].type}</h5>
+                                <h4 style="color: rgb(5, 120, 158);background-color: blanchedalmond;  font-family: 'Courier New', Courier, monospace; padding:20px;">severity: ${data[i].severity} (${data[i].percent}%p)</h6>
                               </div>
                             </div>`)
             $("#bigdiv").append(newdiv)
